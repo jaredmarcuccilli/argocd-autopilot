@@ -12,3 +12,6 @@ kind: L2Advertisement
 metadata:
   name: ip-pool-l2-advertisement
   namespace: metallb-system
+spec:
+  ipAddressPools:
+  - ip-pool
