@@ -146,4 +146,4 @@ spec:
           service:
             name: traefik-dashboard-service
             port:
-              name: web
+              name: dashboard
