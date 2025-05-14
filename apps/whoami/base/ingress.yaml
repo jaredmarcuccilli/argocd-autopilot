@@ -14,3 +14,14 @@ spec:
             name: whoami
             port:
               name: web
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: whoami-ingressroute
+spec:
+  entryPoints:
+    - http
+  routes:
+    - kind: Rule
+      match: Host(`whoami-ir.k8s.corp.ryacom.org`)
