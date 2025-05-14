@@ -9,7 +9,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: traefik
+    namespace: default
     server: https://kubernetes.default.svc
   ignoreDifferences:
   - group: argoproj.io
