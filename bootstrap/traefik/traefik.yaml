@@ -111,7 +111,7 @@ metadata:
   name: traefik-dashboard-service
 
 spec:
-#  type: LoadBalancer
+  type: LoadBalancer
   ports:
     - port: 8080
       targetPort: dashboard
@@ -130,20 +130,3 @@ spec:
       port: 80
   selector:
     app: traefik
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: traefik-dashboard-service-ingress
-spec:
-  rules:
-  - host: traefik.k8s.corp.ryacom.org
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: traefik-dashboard-service
-            port:
-              name: dashboard
