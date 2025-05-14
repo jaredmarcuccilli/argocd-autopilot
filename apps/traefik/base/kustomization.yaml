@@ -8,7 +8,6 @@ helmCharts:
     namespace: traefik-system
     version: 35.2.0
     includeCRDs: true
-    valuesFile: ./values.yaml
 
 resources:
   - ./ns.yaml
