@@ -111,7 +111,7 @@ metadata:
   name: traefik-dashboard-service
 
 spec:
-  type: LoadBalancer
+#  type: LoadBalancer
   ports:
     - port: 8080
       targetPort: dashboard
