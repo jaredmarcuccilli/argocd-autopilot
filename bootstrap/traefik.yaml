@@ -19,7 +19,7 @@ spec:
   project: default
   source:
     path: bootstrap/traefik
-    repoURL: https://github.com/owner/repo.git
+    repoURL: https://github.com/jaredmarcuccilli/argocd-autopilot.git
   syncPolicy:
     automated:
       allowEmpty: true
