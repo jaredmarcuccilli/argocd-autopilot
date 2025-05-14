@@ -1,6 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
+  name: simple-service-loadbalancer
 spec:
+  selector:
+    app: trivial-go-web-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
   type: LoadBalancer
