@@ -1,0 +1,11 @@
+{
+  "appName": "drone",
+  "userGivenName": "drone",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/drone/overlays/test",
+  "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
