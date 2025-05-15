@@ -3,7 +3,6 @@ configMapGenerator:
 - behavior: merge
   literals:
   - kustomize.buildOptions=" --enable-helm"
-  - "server.insecure=true"
   - |
     repository.credentials=- passwordSecret:
         key: git_token
