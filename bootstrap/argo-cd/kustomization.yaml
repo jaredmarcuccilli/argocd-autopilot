@@ -12,9 +12,12 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
+- name: argocd-cmd-params-cm
+  behavior: merge
+  literals:
+    - "server.insecure=true"
 kind: Kustomization
 namespace: argocd
 resources:
 - github.com/argoproj-labs/argocd-autopilot/manifests/base?ref=v0.4.19
 - ./ingress.yaml
-- ./insecure.yaml
