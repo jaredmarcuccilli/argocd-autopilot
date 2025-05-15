@@ -11,6 +11,21 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: traefik
+              name: traefik-api
               port:
-                number: 8080
+                name: traefik
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: traefik-api
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: traefik
+    app.kubernetes.io/instance: traefik-default
+  ports:
+  - port: 8080
+    name: traefik
+    targetPort: 8080
+    protocol: TCP
