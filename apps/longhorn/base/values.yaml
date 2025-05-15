@@ -1,9 +1,2 @@
 preUpgradeChecker:
   jobEnabled: false
-# Create an IngressRoute for the dashboard
-ingressRoute:
-  dashboard:
-    enabled: true
-    # Custom match rule with host domain
-    matchRule: Host(`longhorn.k8s.corp.ryacom.org`)
-    entryPoints: ["websecure"]
