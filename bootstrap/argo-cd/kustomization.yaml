@@ -12,10 +12,10 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
-- name: argocd-cmd-params-cm
-  behavior: merge
+- behavior: merge
   literals:
     - "server.insecure=true"
+  name: argocd-cmd-params-cm
 kind: Kustomization
 namespace: argocd
 resources:
