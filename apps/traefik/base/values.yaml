@@ -1,5 +1,10 @@
+# Create an IngressRoute for the dashboard
 ingressRoute:
   dashboard:
     enabled: true
-additionalArguments:
-- "--api.insecure=true"
+    # Custom match rule with host domain
+    matchRule: Host(`traefik.k8s.corp.ryacom.org`)
+    entryPoints: ["web"]
+    # Add custom middlewares : authentication and redirection
+    middlewares:
+      - name: traefik-dashboard-auth
