@@ -1,0 +1,13 @@
+{
+  "appName": "keycloak",
+  "userGivenName": "keycloak",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "refs/heads/main/kubernetes/",
+  "srcRepoURL": "https://raw.githubusercontent.com/keycloak/keycloak-quickstarts.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null,
+  "exclude": "",
+  "include": ""
+}
