@@ -8,5 +8,7 @@ spec:
     size: 1Gi
   bootstrap:
     initdb:
-      database: test
-      owner: test
+      database: keycloak
+      owner: keycloak
+      secret:
+        name: bw-cnpg-cluster-test-secret
