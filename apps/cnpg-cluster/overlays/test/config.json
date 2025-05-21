@@ -1,0 +1,11 @@
+{
+  "appName": "cnpg-cluster-test",
+  "userGivenName": "cnpg-cluster-test",
+  "destNamespace": "cnpg-cluster-test",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/cnpg-cluster/overlays/test",
+  "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
