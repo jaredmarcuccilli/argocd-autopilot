@@ -1,4 +1,0 @@
-expose:
-  ingress:
-    hosts:
-      core: harbor.k8s.corp.ryacom.org
