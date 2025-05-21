@@ -3,7 +3,7 @@ kind: Kustomization
 
 helmCharts:
   - name: keycloak
-    repo: oci://registry-1.docker.io/bitnamicharts/keycloak
+    repo: https://charts.bitnami.com/bitnami
     releaseName: keycloak
     namespace: keycloak-production
     version: 24.7.0
