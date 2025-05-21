@@ -14,3 +14,4 @@ replicaCount: 3
 ingress:
   enabled: true
   hostname: keycloak.k8s.corp.ryacom.org
+proxyHeaders: xforwarded
