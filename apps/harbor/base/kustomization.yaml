@@ -8,3 +8,4 @@ helmCharts:
     namespace: harbor-production
     version: 1.17.0
     includeCRDs: true
+    valuesFile: ./values.yaml
