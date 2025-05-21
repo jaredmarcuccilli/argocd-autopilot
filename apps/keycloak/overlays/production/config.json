@@ -1,0 +1,11 @@
+{
+  "appName": "keycloak",
+  "userGivenName": "keycloak",
+  "destNamespace": "keycloak-production",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/keycloak/overlays/production",
+  "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
