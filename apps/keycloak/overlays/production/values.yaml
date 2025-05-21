@@ -10,3 +10,4 @@ externalDatabase:
 auth:
   existingSecret: bw-keycloak-production-admin-secret
   passwordSecretKey: password
+replicaCount: 3
