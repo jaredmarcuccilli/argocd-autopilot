@@ -1,0 +1,11 @@
+{
+  "appName": "harbor",
+  "userGivenName": "harbor",
+  "destNamespace": "harbor-production",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/harbor/overlays/production",
+  "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
