@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: sm-operator
+    repo: https://charts.bitwarden.com
+    releaseName: sm-operator
+    namespace: bitwarden-sm-system
+    version: 0.1.0
+    includeCRDs: true
+    valuesFile: ./values.yaml
