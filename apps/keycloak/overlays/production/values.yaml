@@ -11,3 +11,6 @@ auth:
   existingSecret: bw-keycloak-production-admin-secret
   passwordSecretKey: password
 replicaCount: 3
+ingress:
+  enabled: true
+  hostname: keycloak.k8s.corp.ryacom.org
