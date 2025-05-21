@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: keycloak
+    repo: oci://registry-1.docker.io/bitnamicharts/keycloak
+    releaseName: keycloak
+    namespace: keycloak-production
+    version: 24.7.0
+    includeCRDs: true
+    valuesFile: ./values.yaml
+
+resources:
+  - ./ns.yaml
+  - ./bw-secret.yaml
+  - ./cnpg-cluster.yaml
