@@ -9,3 +9,4 @@ externalDatabase:
   database: keycloak
 auth:
   existingSecret: bw-keycloak-production-admin-secret
+  passwordSecretKey: password
