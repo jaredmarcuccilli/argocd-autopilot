@@ -4,6 +4,9 @@ metadata:
   name: cluster-test
 spec:
   instances: 3
-
   storage:
     size: 1Gi
+  bootstrap:
+    initdb:
+      database: test
+      owner: test
