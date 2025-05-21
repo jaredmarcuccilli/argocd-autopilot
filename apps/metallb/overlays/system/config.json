@@ -3,7 +3,7 @@
   "userGivenName": "metallb",
   "destNamespace": "metallb-system",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/metallb/overlays/production",
+  "srcPath": "apps/metallb/overlays/system",
   "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
   "srcTargetRevision": "",
   "labels": null,
