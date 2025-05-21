@@ -1,6 +1,6 @@
 {
-  "appName": "cnpg",
-  "userGivenName": "cnpg",
+  "appName": "cnpg-cluster",
+  "userGivenName": "cnpg-cluster",
   "destNamespace": "cnpg-cluster-production",
   "destServer": "https://kubernetes.default.svc",
   "srcPath": "apps/cnpg-cluster/overlays/production",
