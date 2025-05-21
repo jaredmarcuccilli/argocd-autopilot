@@ -1,0 +1,11 @@
+{
+  "appName": "cnpg",
+  "userGivenName": "cnpg",
+  "destNamespace": "cnpg-system",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/cnpg/overlays/system",
+  "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
