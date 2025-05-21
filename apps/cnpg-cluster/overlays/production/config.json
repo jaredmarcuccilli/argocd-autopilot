@@ -3,7 +3,7 @@
   "userGivenName": "cnpg",
   "destNamespace": "cnpg-cluster-production",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/cnpg/overlays/production",
+  "srcPath": "apps/cnpg-cluster/overlays/production",
   "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
   "srcTargetRevision": "",
   "labels": null,
