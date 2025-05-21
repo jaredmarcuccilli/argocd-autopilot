@@ -8,3 +8,6 @@ ingressRoute:
     # Add custom middlewares : authentication and redirection
     middlewares:
       - name: traefik-dashboard-auth
+service:
+  spec:
+    loadBalancerIP: 10.222.90.201
