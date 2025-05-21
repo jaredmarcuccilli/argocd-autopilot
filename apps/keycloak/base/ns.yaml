@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: keycloak-production
-  labels:
-    app.kubernetes.io/name: keycloak-production
-    pod-security.kubernetes.io/enforce: privileged
