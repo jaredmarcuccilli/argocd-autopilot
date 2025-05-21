@@ -2,6 +2,8 @@ postgresql:
   enabled: false
 externalDatabase:
   existingSecret: bw-keycloak-production-db-secret
+  existingSecretUserKey: username
+  existingSecretPasswordKey: password
   host: keycloak-production-cnpg-cluster-rw.keycloak-production.svc
   user: keycloak
   database: keycloak
