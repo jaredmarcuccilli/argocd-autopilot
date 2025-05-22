@@ -3,7 +3,7 @@
   "userGivenName": "cloudflared",
   "destNamespace": "cloudflared-system",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/traefik/overlays/system",
+  "srcPath": "apps/cloudflared/overlays/system",
   "srcRepoURL": "https://github.com/jaredmarcuccilli/argocd-autopilot.git",
   "srcTargetRevision": "",
   "labels": null,
