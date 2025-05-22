@@ -22,9 +22,6 @@ spec:
             - --metrics
             - 0.0.0.0:2000
             - run
-          args:
-            - --token
-            - $token
           image: cloudflare/cloudflared:2025.5.0
           name: cloudflared
           livenessProbe:
@@ -35,7 +32,7 @@ spec:
             initialDelaySeconds: 10
             periodSeconds: 10
           env:
-            - name: token
+            - name: TUNNEL_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: bw-cloudflared-token-secret
