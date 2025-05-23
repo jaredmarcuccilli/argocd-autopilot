@@ -4,4 +4,3 @@ metadata:
   name: cnpg-system
   labels:
     app.kubernetes.io/name: cnpg-system
-    pod-security.kubernetes.io/enforce: privileged
