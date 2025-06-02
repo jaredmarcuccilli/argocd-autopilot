@@ -4,4 +4,3 @@ metadata:
   name: traefik-system
   labels:
     app.kubernetes.io/name: traefik-system
-    pod-security.kubernetes.io/enforce: privileged
