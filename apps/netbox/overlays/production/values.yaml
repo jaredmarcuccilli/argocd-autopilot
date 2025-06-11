@@ -1,0 +1,11 @@
+postgresql:
+  enabled: false
+externalDatabase:
+  existingSecretName: bw-netbox-production-db-secret
+  existingSecretKey: password
+  host: netbox-production-cnpg-cluster-rw.netbox-production.svc
+  username: netbox
+  database: netbox
+superuser:
+  existingSecret: bw-netbox-production-admin-secret
+replicaCount: 2

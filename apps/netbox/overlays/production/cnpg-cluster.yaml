@@ -1,0 +1,14 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: netbox-production-cnpg-cluster
+spec:
+  instances: 3
+  storage:
+    size: 5Gi
+  bootstrap:
+    initdb:
+      database: netbox
+      owner: netbox
+      secret:
+        name: bw-netbox-production-db-secret
