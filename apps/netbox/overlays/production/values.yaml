@@ -9,3 +9,5 @@ externalDatabase:
 superuser:
   existingSecret: bw-netbox-production-admin-secret
 replicaCount: 2
+persistence:
+  enabled: false
