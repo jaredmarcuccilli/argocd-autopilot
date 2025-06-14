@@ -6,7 +6,7 @@ helmCharts:
     repo: https://charts.netbox.oss.netboxlabs.com/
     releaseName: netbox
     namespace: netbox-production
-    version: 6.0.35
+    version: 6.0.36
     includeCRDs: true
     valuesFile: ./values.yaml
 
